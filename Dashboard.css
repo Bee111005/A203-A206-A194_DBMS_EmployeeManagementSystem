@@ -1,0 +1,23 @@
+/* Sidebar Hover Effect */
+.nav-link {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+  }
+  
+  /* Hover Effect for Logout Button */
+  .btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Ensure z-index for Sidebar */
+  .col-auto {
+    z-index: 2;
+    position: relative;
+  }
+  

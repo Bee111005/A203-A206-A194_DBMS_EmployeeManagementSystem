@@ -1,0 +1,99 @@
+/* Category.css */
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  .category-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .category-header h3 {
+    font-size: 28px;
+    color: #2c3e50; /* Dark blue color for header */
+  }
+  
+  .add-category-btn {
+    background-color: #2c3e50; /* Same dark blue color as the table header */
+    color: #fff;
+    border: none;
+    width: 250px; /* Increased button width */
+    height: 60px; /* Increased button height */
+    border-radius: 30px; /* Rounded button */
+    font-size: 18px; /* Larger font size */
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    line-height: 60px; /* Vertically center text */
+  }
+  
+  .add-category-btn:hover {
+    background-color: #34495e; /* Slightly darker blue on hover */
+    transform: translateY(-5px); /* Button pops up on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-category-btn:active {
+    background-color: #1abc9c; /* Greenish-blue color on active state */
+    transform: translateY(0);
+  }
+  
+  .category-table {
+    width: 90%; /* Increased width */
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 8px; /* Rounded corners for table */
+    overflow: hidden; /* Ensure the table doesn't break out of rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-table th, .category-table td {
+    padding: 20px; /* Increased padding */
+    text-align: center;
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .category-table th {
+    background-color: #2c3e50; /* Dark blue for table header */
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .category-table tr {
+    background-color: #fff;
+    transition: all 0.3s ease; /* Smooth transition */
+    border-bottom: 1px solid #ddd; /* Line between rows */
+  }
+  
+  .category-table tr:hover {
+    transform: translateY(-5px); /* Rows pop up on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-table td button.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Increased padding */
+    border-radius: 20px; /* Rounded delete button */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .category-table td button.delete-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+  }
+  
+  .category-table td button.delete-btn:active {
+    background-color: #a93226;
+    transform: translateY(0);
+  }
+  

@@ -1,0 +1,179 @@
+/* General Page Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dashboard-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card h4 {
+    color: #343a40;
+}
+
+.dashboard-card h5 {
+    font-weight: bold;
+}
+
+/* Admin List Table */
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table thead {
+    background: #007bff;
+    color: white;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover {
+    background: rgba(0, 123, 255, 0.1);
+}
+
+.table img {
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.btn-info {
+    background: #17a2b8;
+    border: none;
+}
+
+.btn-warning {
+    background: #ffc107;
+    border: none;
+}
+
+.btn-info:hover, .btn-warning:hover {
+    opacity: 0.8;
+}
+
+/* Edit Modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background: #007bff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-body label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modal-body input, .modal-body select {
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.modal-body button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .table {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Card Hover Effects */
+.custom-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.custom-card .card-body {
+    border-radius: 10px;
+}
+/* Admin Table Row Hover Effect */
+tr:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Apply rounded corners to the table */
+table {
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Adds spacing between rows */
+    width: 100%;
+  }
+  
+  /* Style table rows */
+  tr {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Style table cells (apply rounded corners) */
+  td, th {
+    background: white; /* Ensure background is applied */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Row hover effect */
+  tr:hover td {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+  }
+  

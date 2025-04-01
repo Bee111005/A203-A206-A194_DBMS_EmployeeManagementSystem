@@ -1,0 +1,89 @@
+/* Center the form container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f7fc;
+  }
+  
+  /* Form Card */
+  .form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Form Title */
+  .form-card h3 {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Inputs */
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Input Focus Effect */
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Labels */
+  .form-label {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  /* Dropdown */
+  .form-select {
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* File Input */
+  .form-control-file {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s;
+  }
+  
+  .form-control-file:hover {
+    border-color: #007bff;
+  }
+  
+  /* Submit Button */
+  .btn-primary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .form-card {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

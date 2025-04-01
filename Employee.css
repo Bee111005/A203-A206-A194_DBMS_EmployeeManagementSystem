@@ -1,0 +1,256 @@
+/* 🚀 Overall Page Styling */
+.employee-container {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* 👑 Smooth Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 🏆 Employee List Header - 3D Embossed Effect */
+  .header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3), 6px 6px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 📌 Table Headers (Dark Grey) */
+  .employee-table th {
+    background-color: #343a40 !important; /* Dark Grey */
+    color: white !important; /* White Text */
+    font-weight: bold;
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #222;
+  }
+  
+  /* 🏆 Table Rows */
+  .employee-table td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🔥 Row Hover Effect */
+  .employee-table tr:hover {
+    background: rgba(0, 123, 255, 0.1);
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px rgba(0, 0, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🌟 Add Employee Button */
+  .add-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    padding: 14px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .add-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(40, 167, 69, 0.6);
+  }
+  
+  /* 🌊 Ripple Effect on Button Click */
+  .add-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* 🎭 Employee Image Styling */
+  .employee-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* 🔄 Bounce Effect on Hover */
+  .employee-image:hover {
+    transform: scale(1.2) rotate(5deg);
+    border-color: #0056b3;
+  }
+  
+  /* 🎨 Edit Button */
+  .edit-btn {
+    background: linear-gradient(135deg, #17a2b8, #138496);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .edit-btn:hover {
+    background: #138496;
+    transform: scale(1.1);
+  }
+  
+  /* 🔥 Delete Button */
+  .delete-btn {
+    background: linear-gradient(135deg, #ffc107, #e0a800);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .delete-btn:hover {
+    background: #e0a800;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(255, 193, 7, 0.6);
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    .employee-container {
+      padding: 10px;
+    }
+  
+    .header {
+      font-size: 24px;
+    }
+  
+    .employee-table th,
+    .employee-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .add-btn,
+    .edit-btn,
+    .delete-btn {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+  /* 🌟 Centering the Table */
+.employee-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* 🚀 Styling for the Table */
+  .employee-table {
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px;
+    margin: 20px auto; /* Centers the table horizontally */
+    border-collapse: collapse;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 📌 Table Headers (Dark Grey) */
+  .employee-table th {
+    background-color: #343a40 !important; /* Dark Grey */
+    color: white !important; /* White Text */
+    font-weight: bold;
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #222;
+  }
+  
+  /* 📌 Table Cells */
+  .employee-table td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🏆 Make Buttons Align in Center */
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    .employee-table {
+      width: 95%;
+    }
+  }
+  /* 🌟 Centering the Table Horizontally */
+.employee-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* 🚀 Styling for the Table */
+  .employee-table {
+    width: 100%; /* Full width for proper alignment */
+    max-width: 1200px; /* Prevents too much stretching */
+    border-collapse: collapse;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 📌 Table Headers (Dark Grey) */
+  .employee-table th {
+    background-color: #343a40 !important; /* Dark Grey */
+    color: white !important; /* White Text */
+    font-weight: bold;
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #222;
+  }
+  
+  /* 📌 Table Cells */
+  .employee-table td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🏆 Ensure Action Buttons Fit Properly */
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 1024px) {
+    .employee-table {
+      width: 95%;
+    }
+  }
+  
